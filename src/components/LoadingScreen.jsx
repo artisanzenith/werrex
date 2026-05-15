@@ -13,14 +13,14 @@ export default function LoadingScreen() {
         animate={{ rotate: [0, 360] }}
         transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
       >
-        <span className="font-display font-bold text-2xl text-white">N</span>
+        <span className="font-display font-bold text-2xl text-white">W</span>
       </motion.div>
       <motion.p
         className="text-gray-400 font-medium"
         animate={{ opacity: [0.5, 1, 0.5] }}
         transition={{ duration: 1.5, repeat: Infinity }}
       >
-        Loading Nexus Digital...
+        Loading Werrex...
       </motion.p>
       <div className="mt-6 w-48 h-1 bg-dark-700 rounded-full overflow-hidden">
         <motion.div

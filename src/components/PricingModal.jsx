@@ -25,22 +25,23 @@ export default function PricingModal({ service, isOpen, onClose }) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-4 md:inset-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:max-w-6xl md:w-full md:max-h-[90vh] z-[70] overflow-y-auto"
+            className="fixed inset-0 z-[70] flex items-center justify-center p-4 sm:p-6"
           >
-            <div className="glass-card p-6 md:p-8 m-auto">
-              <div className="flex justify-between items-start mb-8">
-                <div>
-                  <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-2">
-                    {service.title} — Pricing
-                  </h3>
-                  <p className="text-gray-400">{service.shortDescription}</p>
-                </div>
-                <button
-                  type="button"
-                  onClick={onClose}
-                  className="p-2 rounded-lg hover:bg-white/10 text-gray-400 hover:text-white transition-colors"
-                  aria-label="Close"
-                >
+            <div className="w-full max-w-5xl max-h-[90vh] overflow-y-auto">
+              <div className="glass-card p-6 md:p-8 w-full">
+                <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-8">
+                  <div className="flex-1">
+                    <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-2">
+                      {service.title} Pricing
+                    </h3>
+                    <p className="text-gray-400">{service.shortDescription}</p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={onClose}
+                    className="p-2 rounded-lg hover:bg-white/10 text-gray-400 hover:text-white transition-colors"
+                    aria-label="Close"
+                  >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -66,7 +67,7 @@ export default function PricingModal({ service, isOpen, onClose }) {
                     <h4 className="font-display text-xl font-bold text-white mb-1">{pkg.name}</h4>
                     <div className="mb-4">
                       <span className="text-3xl font-bold gradient-text">${pkg.price.toLocaleString()}</span>
-                      {service.id === 'social-media' && (
+                      {service.id === 'socialmedia' && (
                         <span className="text-gray-400 text-sm">/mo</span>
                       )}
                     </div>

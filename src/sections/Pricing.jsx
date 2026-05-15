@@ -63,7 +63,7 @@ export default function Pricing() {
                 <span className="text-4xl font-bold gradient-text">
                   ${pkg.price.toLocaleString()}
                 </span>
-                {activeService.id === 'social-media' && (
+                {activeService.id === 'socialmedia' && (
                   <span className="text-gray-400">/mo</span>
                 )}
               </div>

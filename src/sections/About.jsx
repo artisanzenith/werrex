@@ -37,7 +37,7 @@ export default function About() {
             <SectionHeading
               badge="About Us"
               title="Crafting Digital Experiences Since 2012"
-              subtitle="Nexus Digital is a full-service agency passionate about helping businesses thrive in the digital landscape."
+              subtitle="Werrex is a full service agency passionate about helping businesses thrive in the digital landscape."
               align="left"
               className="mb-6"
             />
@@ -48,7 +48,7 @@ export default function About() {
               Whether you are a startup launching your first website or an enterprise scaling your digital presence, we have the experience and passion to make it happen.
             </p>
             <ul className="space-y-3 mb-8">
-              {['Client-first approach', 'Transparent communication', 'Results-driven strategy', 'Long-term partnerships'].map((item) => (
+              {['Client first approach', 'Transparent communication', 'Results driven strategy', 'Long term partnerships'].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-300">
                   <span className="w-2 h-2 rounded-full bg-accent" />
                   {item}

@@ -27,7 +27,7 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="inline-block px-4 py-1.5 mb-6 text-sm font-medium rounded-full bg-accent/20 text-accent-light border border-accent/30"
             >
-              Award-Winning Digital Agency
+              Award Winning Digital Agency
             </motion.span>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               We Build Brands That{' '}

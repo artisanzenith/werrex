@@ -9,7 +9,7 @@ const reasons = [
     icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
   },
   {
-    title: 'Full-Service Expertise',
+    title: 'Full Service Expertise',
     description: 'Web, design, and social under one roof. Cohesive brand experiences without juggling multiple vendors.',
     icon: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10',
   },
@@ -20,7 +20,7 @@ const reasons = [
   },
   {
     title: 'Modern Technology',
-    description: 'React, Next.js, and cutting-edge tools ensure fast, scalable, and future-proof solutions.',
+    description: 'React, Next.js, and cutting edge tools ensure fast, scalable, and future proof solutions.',
     icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4',
   },
   {
@@ -37,12 +37,12 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="section-padding bg-dark-900/30">
+    <section id="whyus" className="section-padding bg-dark-900/30">
       <div className="container-custom">
         <SectionHeading
           badge="Why Choose Us"
-          title="The Nexus Advantage"
-          subtitle="We do not just build websites — we build partnerships that fuel lasting success."
+          title="The Werrex Advantage"
+          subtitle="We do not just build websites. We build partnerships that fuel lasting success."
         />
         <motion.div
           variants={staggerContainer}

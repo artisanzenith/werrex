@@ -5,7 +5,7 @@ export const testimonials = [
     role: 'CEO, Bloom Cosmetics',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80',
     quote:
-      'Nexus Digital transformed our online presence. Our new ecommerce site increased sales by 140% in the first quarter. Absolutely phenomenal work.',
+      'Werrex transformed our online presence. Our new ecommerce site increased sales by 140% in the first quarter. Absolutely phenomenal work.',
     rating: 5,
   },
   {
@@ -41,7 +41,7 @@ export const testimonials = [
     role: 'Creative Director, Studio Nine',
     image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80',
     quote:
-      'Working with Nexus felt like having an in-house team. Communication was seamless, deadlines were met, and the quality was outstanding.',
+      'Working with Werrex felt like having an in house team. Communication was seamless, deadlines were met, and the quality was outstanding.',
     rating: 5,
   },
   {
@@ -50,7 +50,7 @@ export const testimonials = [
     role: 'VP Growth, Finova',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&q=80',
     quote:
-      'The full-service approach — web, design, and social — gave us a cohesive brand experience. Our investors noticed the difference immediately.',
+      'The full service approach with web, design, and social gave us a cohesive brand experience. Our investors noticed the difference immediately.',
     rating: 5,
   },
 ]

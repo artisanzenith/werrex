@@ -2,7 +2,7 @@ export const processSteps = [
   {
     step: '01',
     title: 'Discovery',
-    description: 'We learn your goals, audience, and vision through in-depth consultation and research.',
+    description: 'We learn your goals, audience, and vision through in depth consultation and research.',
     icon: 'search',
   },
   {
@@ -14,13 +14,13 @@ export const processSteps = [
   {
     step: '03',
     title: 'Design & Build',
-    description: 'Our team creates stunning designs and develops pixel-perfect, performant solutions.',
+    description: 'Our team creates stunning designs and develops pixel perfect, performant solutions.',
     icon: 'build',
   },
   {
     step: '04',
     title: 'Launch & Grow',
-    description: 'We deploy, optimize, and provide ongoing support to ensure long-term success.',
+    description: 'We deploy, optimize, and provide ongoing support to ensure long term success.',
     icon: 'rocket',
   },
 ]

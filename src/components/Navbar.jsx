@@ -49,10 +49,10 @@ export default function Navbar() {
       <nav className="container-custom flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-cyan-glow flex items-center justify-center">
-            <span className="font-display font-bold text-white">N</span>
+            <span className="font-display font-bold text-white">W</span>
           </div>
-          <span className="font-display font-bold text-xl text-white group-hover:text-accent-light transition-colors">
-            Nexus<span className="gradient-text">Digital</span>
+          <span className="font-display font-bold text-xl gradient-text group-hover:opacity-90 transition-opacity">
+            Werrex
           </span>
         </Link>
 

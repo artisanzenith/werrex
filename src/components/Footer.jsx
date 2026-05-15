@@ -33,10 +33,10 @@ export default function Footer() {
             <div className="lg:col-span-2">
               <Link to="/" className="flex items-center gap-2 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-cyan-glow flex items-center justify-center">
-                  <span className="font-display font-bold text-white">N</span>
+                  <span className="font-display font-bold text-white">W</span>
                 </div>
-                <span className="font-display font-bold text-xl text-white">
-                  Nexus<span className="gradient-text">Digital</span>
+                <span className="font-display font-bold text-xl gradient-text">
+                  Werrex
                 </span>
               </Link>
               <p className="text-gray-400 mb-6 max-w-sm leading-relaxed">
@@ -108,7 +108,7 @@ export default function Footer() {
 
           <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} Nexus Digital Agency. All rights reserved.
+              © {new Date().getFullYear()} Werrex Agency. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-gray-500">
               <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>

@@ -1,4 +1,4 @@
-# Nexus Digital — Agency Website
+# Werrex Agency Website
 
 A modern, production-ready digital agency website built with React, Tailwind CSS, and Framer Motion.
 

@@ -18,7 +18,7 @@ export default function App() {
   return (
     <>
       <Helmet>
-        <title>Nexus Digital — Premium Digital Agency</title>
+        <title>Werrex. Premium Digital Agency</title>
         <meta name="description" content="Website development, graphic design, and social media marketing agency. Transform your brand with expert digital solutions." />
       </Helmet>
 

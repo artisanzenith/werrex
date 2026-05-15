@@ -10,7 +10,7 @@ export default function Process() {
         <SectionHeading
           badge="Our Process"
           title="How We Bring Ideas to Life"
-          subtitle="A proven four-step methodology that ensures clarity, quality, and results at every stage."
+          subtitle="A proven four step methodology that ensures clarity, quality, and results at every stage."
         />
         <motion.div
           variants={staggerContainer}

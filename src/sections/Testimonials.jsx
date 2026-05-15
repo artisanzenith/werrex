@@ -10,7 +10,7 @@ export default function Testimonials() {
         <SectionHeading
           badge="Client Reviews"
           title="What Our Clients Say"
-          subtitle="Don't just take our word for it — hear from brands we've helped transform."
+          subtitle="Don't just take our word for it. Hear from brands we've helped transform."
         />
         <motion.div
           variants={staggerContainer}

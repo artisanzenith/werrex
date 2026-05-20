@@ -5,11 +5,10 @@ import Button from './Button'
 
 const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/#about' },
-  { label: 'Services', href: '/#services' },
-  { label: 'Portfolio', href: '/#portfolio' },
-  { label: 'Pricing', href: '/#pricing' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Navbar() {
@@ -26,16 +25,6 @@ export default function Navbar() {
   useEffect(() => {
     setMobileOpen(false)
   }, [location])
-
-  const handleNavClick = (href) => {
-    if (href.startsWith('/#')) {
-      const id = href.replace('/#', '')
-      if (location.pathname === '/') {
-        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
-    setMobileOpen(false)
-  }
 
   return (
     <motion.header
@@ -62,12 +51,6 @@ export default function Navbar() {
             <Link
               key={link.href}
               to={link.href}
-              onClick={(e) => {
-                if (link.href.includes('#')) {
-                  e.preventDefault()
-                  handleNavClick(link.href)
-                }
-              }}
               className="text-sm font-medium text-gray-300 hover:text-white transition-colors relative group"
             >
               {link.label}
@@ -77,7 +60,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:block">
-          <Button href="/#contact" onClick={() => handleNavClick('/#contact')}>
+          <Button to="/contact">
             Get Started
           </Button>
         </div>
@@ -113,12 +96,6 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   to={link.href}
-                  onClick={(e) => {
-                    if (link.href.includes('#')) {
-                      e.preventDefault()
-                      handleNavClick(link.href)
-                    }
-                  }}
                   className="py-3 px-4 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
                 >
                   {link.label}
@@ -126,7 +103,7 @@ export default function Navbar() {
               ))}
               <Button
                 className="mt-2 w-full"
-                onClick={() => handleNavClick('/#contact')}
+                to="/contact"
               >
                 Get Started
               </Button>

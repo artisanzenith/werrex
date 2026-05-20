@@ -2,29 +2,24 @@ import { Link } from 'react-router-dom'
 
 const footerLinks = {
   services: [
-    { label: 'Website Development', href: '/#services' },
-    { label: 'Graphic Design', href: '/#services' },
-    { label: 'Social Media Marketing', href: '/#services' },
+    { label: 'Website Development', href: '/services' },
+    { label: 'Graphic Design', href: '/services' },
+    { label: 'Social Media Marketing', href: '/services' },
   ],
   company: [
-    { label: 'About Us', href: '/#about' },
-    { label: 'Our Process', href: '/#process' },
-    { label: 'Portfolio', href: '/#portfolio' },
-    { label: 'Team', href: '/#team' },
+    { label: 'About Us', href: '/about' },
+    { label: 'Our Process', href: '/about' },
+    { label: 'Portfolio', href: '/portfolio' },
+    { label: 'Team', href: '/portfolio' },
   ],
   support: [
-    { label: 'FAQ', href: '/#faq' },
-    { label: 'Contact', href: '/#contact' },
-    { label: 'Pricing', href: '/#pricing' },
+    { label: 'FAQ', href: '/contact' },
+    { label: 'Contact', href: '/contact' },
+    { label: 'Pricing', href: '/services' },
   ],
 }
 
 export default function Footer() {
-  const scrollTo = (href) => {
-    const id = href.replace('/#', '')
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <footer className="bg-dark-900 border-t border-white/5">
       <div className="section-padding pb-8">
@@ -61,13 +56,12 @@ export default function Footer() {
               <ul className="space-y-3">
                 {footerLinks.services.map((link) => (
                   <li key={link.label}>
-                    <button
-                      type="button"
-                      onClick={() => scrollTo(link.href)}
+                    <Link
+                      to={link.href}
                       className="text-gray-400 hover:text-accent-light transition-colors text-sm"
                     >
                       {link.label}
-                    </button>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -77,13 +71,12 @@ export default function Footer() {
               <ul className="space-y-3">
                 {footerLinks.company.map((link) => (
                   <li key={link.label}>
-                    <button
-                      type="button"
-                      onClick={() => scrollTo(link.href)}
+                    <Link
+                      to={link.href}
                       className="text-gray-400 hover:text-accent-light transition-colors text-sm"
                     >
                       {link.label}
-                    </button>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -93,13 +86,12 @@ export default function Footer() {
               <ul className="space-y-3">
                 {footerLinks.support.map((link) => (
                   <li key={link.label}>
-                    <button
-                      type="button"
-                      onClick={() => scrollTo(link.href)}
+                    <Link
+                      to={link.href}
                       className="text-gray-400 hover:text-accent-light transition-colors text-sm"
                     >
                       {link.label}
-                    </button>
+                    </Link>
                   </li>
                 ))}
               </ul>

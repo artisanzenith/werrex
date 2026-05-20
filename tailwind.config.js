@@ -5,18 +5,18 @@ export default {
     extend: {
       colors: {
         dark: {
-          950: '#030712',
-          900: '#0a0f1a',
+          950: '#050816',
+          900: '#09111f',
           800: '#111827',
           700: '#1f2937',
         },
         accent: {
-          DEFAULT: '#8b5cf6',
-          light: '#a78bfa',
-          dark: '#7c3aed',
+          DEFAULT: '#f59e0b',
+          light: '#fbbf24',
+          dark: '#b45309',
         },
         cyan: {
-          glow: '#22d3ee',
+          glow: '#38bdf8',
         },
       },
       fontFamily: {
@@ -25,8 +25,8 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-glow': 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(139, 92, 246, 0.3), transparent)',
-        'card-gradient': 'linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(34, 211, 238, 0.05) 100%)',
+        'hero-glow': 'radial-gradient(circle at top left, rgba(245, 158, 11, 0.14), transparent 25%), radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.1), transparent 28%)',
+        'card-gradient': 'linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(56, 189, 248, 0.05) 100%)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

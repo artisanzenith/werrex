@@ -19,13 +19,13 @@ export default function CTA() {
               Ready to Elevate Your Brand?
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mb-8 text-lg">
-              Join 250+ successful brands. Book a free strategy call and discover how we can accelerate your growth.
+              Book a conversation with our team and explore how a polished digital experience can improve your brand presence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button to="/contact">
                 Book Free Consultation
               </Button>
-              <Button variant="secondary" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="secondary" to="/services">
                 Explore Services
               </Button>
             </div>

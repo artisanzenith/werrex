@@ -36,16 +36,16 @@ export default function About() {
           >
             <SectionHeading
               badge="About Us"
-              title="Crafting Digital Experiences Since 2012"
-              subtitle="Werrex is a full service agency passionate about helping businesses thrive in the digital landscape."
+              title="Digital strategy with a polished, human-first approach"
+              subtitle="Werrex designs modern websites, brand systems, and campaigns that work reliably for your team and your customers."
               align="left"
               className="mb-6"
             />
             <p className="text-gray-400 mb-4 leading-relaxed">
-              We combine strategic thinking, creative design, and technical expertise to deliver solutions that exceed expectations. Our team of 45+ specialists works collaboratively to bring your vision to life.
+              We pair thoughtful design with web engineering standards so your website looks distinctive and performs beautifully across devices.
             </p>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              Whether you are a startup launching your first website or an enterprise scaling your digital presence, we have the experience and passion to make it happen.
+              From initial concept to launch, our process is structured, transparent, and centered on your business goals.
             </p>
             <ul className="space-y-3 mb-8">
               {['Client first approach', 'Transparent communication', 'Results driven strategy', 'Long term partnerships'].map((item) => (

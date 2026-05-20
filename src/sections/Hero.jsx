@@ -27,36 +27,27 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="inline-block px-4 py-1.5 mb-6 text-sm font-medium rounded-full bg-accent/20 text-accent-light border border-accent/30"
             >
-              Digital Agency
+              Strategic Digital Studio
             </motion.span>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              We Build Brands That{' '}
-              <span className="gradient-text">Dominate Digital</span>
+              Professional websites and brands built to
+              <span className="gradient-text"> perform on every screen.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed">
-              Transform your business with thoughtful websites, purposeful design, and social strategies that support measurable growth.
+              We design refined digital experiences that are fast, clear, and tailored to your business objectives.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={() => scrollTo('contact')}>Start Your Project</Button>
-              <Button variant="secondary" onClick={() => scrollTo('portfolio')}>
-                View Our Work
+              <Button to="/contact">Start a Project</Button>
+              <Button variant="secondary" to="/services">
+                View Services
               </Button>
             </div>
-            <div className="mt-10 flex items-center gap-6">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <img
-                    key={i}
-                    src={`https://images.unsplash.com/photo-${['1494790108377-be9c29b29330', '1507003211169-0a1dd7228f2d', '1438761681033-6461ffad8d80', '1472099645785-5658abf4ff4e'][i - 1]}?w=80&q=80`}
-                    alt=""
-                    className="w-10 h-10 rounded-full border-2 border-dark-950 object-cover"
-                  />
-                ))}
-              </div>
-              <div>
-                <p className="font-semibold text-white">Clients we've worked with</p>
-                <p className="text-sm text-gray-400">Highly rated by clients</p>
-              </div>
+            <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3">
+              {['Trusted by growth teams', 'Mobile-first experiences', 'Clear project delivery'].map((item) => (
+                <div key={item} className="rounded-3xl border border-white/10 bg-dark-900/70 p-4 text-sm text-gray-300">
+                  {item}
+                </div>
+              ))}
             </div>
           </motion.div>
 
@@ -66,20 +57,20 @@ export default function Hero() {
             variants={slideInRight}
             className="relative hidden lg:block"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-accent/20 border border-white/10">
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-950/40 border border-white/10">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
-                alt="Team collaboration"
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80"
+                alt="Creative workspace"
                 className="w-full aspect-[4/3] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-950/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
-                className="absolute bottom-6 left-6 right-6 glass-card p-4"
+                className="absolute bottom-6 left-6 right-6 rounded-3xl bg-slate-950/95 border border-white/10 p-5"
               >
-                <p className="text-sm text-gray-400 mb-1">Projects delivered</p>
-                <p className="font-display text-2xl font-bold gradient-text">Selected</p>
+                <p className="text-sm text-gray-400 mb-2">Digital products built for clarity</p>
+                <p className="font-display text-2xl font-bold text-white">Professional, dependable, scalable.</p>
               </motion.div>
             </div>
           </motion.div>

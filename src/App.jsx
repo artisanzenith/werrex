@@ -6,6 +6,10 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import LoadingScreen from './components/LoadingScreen'
 import Home from './pages/Home'
+import AboutPage from './pages/About'
+import ServicesPage from './pages/Services'
+import PortfolioPage from './pages/Portfolio'
+import ContactPage from './pages/Contact'
 
 export default function App() {
   const [loading, setLoading] = useState(true)
@@ -32,6 +36,10 @@ export default function App() {
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/portfolio" element={<PortfolioPage />} />
+              <Route path="/contact" element={<ContactPage />} />
             </Routes>
           </main>
           <Footer />

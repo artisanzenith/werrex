@@ -4,9 +4,9 @@ import ContactForm from '../components/ContactForm'
 import { slideInLeft, slideInRight } from '../utils/animations'
 
 const contactInfo = [
-  { label: 'Email', value: 'hello@werrex.com', href: 'mailto:hello@werrex.com' },
-  { label: 'Phone', value: '+1 (555) 123 4567', href: 'tel:+15551234567' },
-  { label: 'Office', value: '123 Innovation Drive, San Francisco, CA', href: '#' },
+  { label: 'Email', value: 'info@werrex.com', href: 'mailto:info@werrex.com' },
+  { label: 'Phone', value: '+1 321 357 6140', href: 'tel:+13213576140' },
+  { label: 'Office', value: 'Norbert Ave Warren Michigan', href: 'https://www.google.com/maps/search/Norbert+Ave+Warren+Michigan' },
 ]
 
 export default function Contact() {

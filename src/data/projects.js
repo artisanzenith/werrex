@@ -18,7 +18,7 @@ export const projects = [
     title: 'Urban Eats Social Campaign',
     category: 'Social Media',
     image: 'https://images.unsplash.com/photo-1611162617474-5b21e939e113?w=600&q=80',
-    description: 'Multi-platform campaign driving 25K new followers in 4 months.',
+    description: 'Omni-channel campaign driving 25K new followers in 4 months.',
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const projects = [
     title: 'Finova Fintech Dashboard',
     category: 'Web Development',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
-    description: 'SaaS dashboard with real-time analytics and API integrations.',
+    description: 'SaaS dashboard with live analytics and API integrations.',
   },
   {
     id: 6,

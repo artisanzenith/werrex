@@ -43,7 +43,7 @@ export default function Hero() {
               </Button>
             </div>
             <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3">
-              {['Trusted by growth teams', 'Mobile-first experiences', 'Clear project delivery'].map((item) => (
+              {['Trusted by growth teams', 'Mobile optimized experiences', 'Clear project delivery'].map((item) => (
                 <div key={item} className="rounded-3xl border border-white/10 bg-dark-900/70 p-4 text-sm text-gray-300">
                   {item}
                 </div>

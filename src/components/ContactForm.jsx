@@ -67,6 +67,11 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="glass-card p-6 md:p-8 space-y-5">
+      {error && (
+        <div className="rounded-md bg-red-900/60 border border-red-700 p-3 text-sm text-red-100">
+          {error}
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
@@ -139,7 +144,7 @@ export default function ContactForm() {
         />
       </div>
       <Button type="submit" className="w-full sm:w-auto">
-        Send Message
+        {loading ? 'Sending...' : 'Send Message'}
       </Button>
     </form>
   )

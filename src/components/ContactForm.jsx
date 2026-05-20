@@ -11,11 +11,33 @@ export default function ContactForm() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
-    setFormData({ name: '', email: '', company: '', service: '', message: '' })
+    setError('')
+    setLoading(true)
+
+    try {
+      const res = await fetch('/api/send-contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      const json = await res.json()
+      if (res.ok && json.ok) {
+        setSubmitted(true)
+        setFormData({ name: '', email: '', company: '', service: '', message: '' })
+      } else {
+        setError(json.error || 'Failed to send message')
+      }
+    } catch (err) {
+      setError('Network error. Please try again later.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleChange = (e) => {
@@ -34,8 +56,8 @@ export default function ContactForm() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="font-display text-xl font-bold text-white mb-2">Thank You!</h3>
-        <p className="text-gray-400 mb-4">We will get back to you within 24 hours.</p>
+        <h3 className="font-display text-xl font-bold text-white mb-2">Message Sent</h3>
+        <p className="text-gray-400 mb-4">Your message was successfully sent. We'll respond within 24 hours.</p>
         <Button variant="secondary" onClick={() => setSubmitted(false)}>
           Send Another Message
         </Button>

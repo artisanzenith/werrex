@@ -5,7 +5,7 @@ import { staggerContainer, fadeInUp } from '../utils/animations'
 const reasons = [
   {
     title: 'Proven Track Record',
-    description: '250+ successful projects with 98% client satisfaction. We deliver results, not just deliverables.',
+    description: 'Many completed projects and strong client relationships. We focus on measurable results.',
     icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
   },
   {

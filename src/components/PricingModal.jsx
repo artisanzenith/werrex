@@ -82,13 +82,27 @@ export default function PricingModal({ service, isOpen, onClose }) {
                           </li>
                         ))}
                       </ul>
-                      <Button
-                        className="w-full"
-                        variant={pkg.recommended ? 'primary' : 'secondary'}
-                        onClick={scrollToContact}
-                      >
-                        Get Started
-                      </Button>
+                      <div className="flex gap-3">
+                        <Button
+                          className="flex-1"
+                          variant={pkg.recommended ? 'primary' : 'secondary'}
+                          onClick={scrollToContact}
+                        >
+                          Contact
+                        </Button>
+                        <a
+                          href={`mailto:hello@werrex.com?subject=${encodeURIComponent(
+                            `Purchase Request - ${service.title} - ${pkg.name}`
+                          )}&body=${encodeURIComponent(
+                            `I want to purchase the ${pkg.name} package for ${service.title}. Please contact me with next steps.`
+                          )}`}
+                          className="w-full"
+                        >
+                          <Button className="flex-1" variant={pkg.recommended ? 'secondary' : 'secondary'}>
+                            Purchase
+                          </Button>
+                        </a>
+                      </div>
                     </motion.div>
                   ))}
                 </div>

@@ -21,7 +21,7 @@ export default function Services() {
         <SectionHeading
           badge="Our Services"
           title="Solutions That Drive Growth"
-          subtitle="From pixel perfect websites to viral social campaigns. We deliver end to end digital excellence tailored to your goals."
+          subtitle="From websites to social campaigns. We build practical, measurable digital solutions tailored to your goals."
         />
         <motion.div
           variants={staggerContainer}

@@ -83,8 +83,18 @@ export default function Pricing() {
                 variant={pkg.recommended ? 'primary' : 'secondary'}
                 onClick={scrollToContact}
               >
-                Get Started
+                Contact
               </Button>
+              <a
+                href={`mailto:hello@werrex.com?subject=${encodeURIComponent(
+                  `Purchase Request - ${activeService.title} - ${pkg.name}`
+                )}&body=${encodeURIComponent(
+                  `I want to purchase the ${pkg.name} package for ${activeService.title}. Please contact me with next steps.`
+                )}`}
+                className="mt-3 block text-center text-sm text-gray-300 hover:text-white"
+              >
+                Purchase
+              </a>
             </div>
           ))}
         </motion.div>

@@ -20,7 +20,7 @@ export const team = [
     name: 'Priya Sharma',
     role: 'Lead Designer',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
-    bio: 'Award winning designer with expertise in brand identity and UI/UX.',
+    bio: 'Experienced designer specializing in brand identity and UI/UX.',
     social: { linkedin: '#', dribbble: '#' },
   },
   {

@@ -27,14 +27,14 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="inline-block px-4 py-1.5 mb-6 text-sm font-medium rounded-full bg-accent/20 text-accent-light border border-accent/30"
             >
-              Award Winning Digital Agency
+              Digital Agency
             </motion.span>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               We Build Brands That{' '}
               <span className="gradient-text">Dominate Digital</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed">
-              Transform your business with stunning websites, captivating design, and social media strategies that drive real growth. Trusted by 250+ brands worldwide.
+              Transform your business with thoughtful websites, purposeful design, and social strategies that support measurable growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button onClick={() => scrollTo('contact')}>Start Your Project</Button>
@@ -54,8 +54,8 @@ export default function Hero() {
                 ))}
               </div>
               <div>
-                <p className="font-semibold text-white">250+ Happy Clients</p>
-                <p className="text-sm text-gray-400">4.9/5 average rating</p>
+                <p className="font-semibold text-white">Clients we've worked with</p>
+                <p className="text-sm text-gray-400">Highly rated by clients</p>
               </div>
             </div>
           </motion.div>
@@ -79,7 +79,7 @@ export default function Hero() {
                 className="absolute bottom-6 left-6 right-6 glass-card p-4"
               >
                 <p className="text-sm text-gray-400 mb-1">Projects delivered</p>
-                <p className="font-display text-2xl font-bold gradient-text">250+</p>
+                <p className="font-display text-2xl font-bold gradient-text">Selected</p>
               </motion.div>
             </div>
           </motion.div>
